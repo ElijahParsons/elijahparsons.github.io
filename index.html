@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +7,7 @@
 
     <title>Your Name | Engineering Portfolio</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,609 +16,367 @@
 
 <body>
 
-    <!-- Navigation -->
-    <header class="navbar">
-        <div class="nav-container">
+<header class="navbar">
+    <div class="nav-container">
 
-            <a href="#" class="logo">
-                <span class="logo-symbol">&lt;/&gt;</span>
-                <span>Your Name</span>
-            </a>
+        <a href="index.html" class="logo">
+            <span class="logo-symbol">&lt;/&gt;</span>
+            <span>Your Name</span>
+        </a>
 
-            <nav>
-                <a href="#projects">Projects</a>
-                <a href="#experience">Experience</a>
-                <a href="#skills">Skills</a>
-                <a href="#about">About</a>
-            </nav>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="experience.html">Experience</a>
+        </nav>
 
-            <a href="#contact" class="nav-contact">Contact</a>
+        <a href="#contact" class="nav-contact">Contact</a>
+
+    </div>
+</header>
+
+
+<main>
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="eyebrow">ENGINEERING PORTFOLIO</p>
+
+            <h1>
+                Engineer.<br>
+                <span>Builder. Problem Solver.</span>
+            </h1>
+
+            <p class="hero-description">
+                I'm an engineering student interested in designing, building,
+                testing, and improving real-world systems.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="projects.html" class="button button-primary">
+                    Explore Projects →
+                </a>
+
+                <a href="experience.html" class="button button-secondary">
+                    View Experience
+                </a>
+
+            </div>
 
         </div>
-    </header>
 
 
-    <!-- Hero Section -->
-    <main>
+        <div class="hero-graphic">
 
-        <section class="hero">
+            <div class="blueprint">
 
-            <div class="hero-content">
+                <div class="blueprint-grid"></div>
 
-                <p class="eyebrow">
-                    ENGINEERING PORTFOLIO
-                </p>
+                <div class="technical-circle">
+                    <div class="circle-inner"></div>
+                    <div class="crosshair horizontal"></div>
+                    <div class="crosshair vertical"></div>
+                </div>
 
-                <h1>
-                    Building things.<br>
-                    <span>Solving problems.</span>
-                </h1>
-
-                <p class="hero-description">
-                    I'm an engineering student and builder focused on designing,
-                    prototyping, and improving real-world systems.
-                </p>
-
-                <div class="hero-buttons">
-                    <a href="#projects" class="button button-primary">
-                        View My Projects
-                        <span>→</span>
-                    </a>
-
-                    <a href="#contact" class="button button-secondary">
-                        Get In Touch
-                    </a>
+                <div class="blueprint-label">
+                    ENGINEERING / 001
                 </div>
 
             </div>
 
+        </div>
 
-            <!-- Engineering graphic -->
-            <div class="hero-graphic">
+    </section>
 
-                <div class="blueprint">
 
-                    <div class="blueprint-grid"></div>
+    <!-- HIGHLIGHTED PROJECTS -->
 
-                    <div class="technical-circle">
-                        <div class="circle-inner"></div>
-                        <div class="crosshair horizontal"></div>
-                        <div class="crosshair vertical"></div>
-                    </div>
+    <section class="section">
 
-                    <div class="dimension dimension-top">
-                        <span>120</span>
-                    </div>
+        <div class="section-heading">
 
-                    <div class="dimension dimension-side">
-                        <span>80</span>
-                    </div>
+            <div>
+                <p class="section-number">01 / SELECTED PROJECTS</p>
 
-                    <div class="blueprint-label">
-                        SYSTEM_01
-                    </div>
+                <h2>Things I've built.</h2>
+            </div>
+
+            <a href="projects.html" class="section-link">
+                View All Projects →
+            </a>
+
+        </div>
+
+
+        <div class="featured-grid">
+
+
+            <a href="projects/project-1.html" class="featured-project">
+
+                <div class="featured-image">
+                    <img src="images/project-1.jpg" alt="Project 1">
+                    <span class="project-number">01</span>
+                </div>
+
+                <div class="featured-content">
+
+                    <span class="project-type">MECHANICAL DESIGN</span>
+
+                    <h3>Autonomous Robotic System</h3>
+
+                    <p>
+                        Designed and built an autonomous robotic platform
+                        combining mechanical design, electronics, and controls.
+                    </p>
+
+                    <span class="card-link">
+                        View Project →
+                    </span>
 
                 </div>
 
-            </div>
-
-        </section>
+            </a>
 
 
-        <!-- Stats -->
-        <section class="stats">
+            <a href="projects/project-2.html" class="featured-project">
 
-            <div class="stat">
-                <strong>12+</strong>
-                <span>Projects</span>
-            </div>
-
-            <div class="stat">
-                <strong>4</strong>
-                <span>Engineering Disciplines</span>
-            </div>
-
-            <div class="stat">
-                <strong>3+</strong>
-                <span>Years Building</span>
-            </div>
-
-            <div class="stat">
-                <strong>∞</strong>
-                <span>Things Left to Build</span>
-            </div>
-
-        </section>
-
-
-        <!-- Projects -->
-        <section id="projects" class="section">
-
-            <div class="section-heading">
-
-                <div>
-                    <p class="section-number">01 / PROJECTS</p>
-
-                    <h2>
-                        Things I've built.
-                    </h2>
+                <div class="featured-image">
+                    <img src="images/project-2.jpg" alt="Project 2">
+                    <span class="project-number">02</span>
                 </div>
 
-                <p class="section-description">
-                    A selection of engineering projects ranging from mechanical
-                    systems to electronics, software, and experimental designs.
-                </p>
+                <div class="featured-content">
 
-            </div>
+                    <span class="project-type">ELECTRONICS</span>
 
+                    <h3>Embedded Control System</h3>
 
-            <div class="project-grid">
+                    <p>
+                        A custom embedded system designed to collect sensor
+                        data and control multiple outputs in real time.
+                    </p>
 
-                <!-- Project 1 -->
-                <article class="project-card featured">
-
-                    <div class="project-image project-image-1">
-                        <div class="project-overlay">
-                            <span>01</span>
-                        </div>
-                    </div>
-
-                    <div class="project-content">
-
-                        <div class="project-top">
-                            <span class="project-type">
-                                MECHANICAL
-                            </span>
-
-                            <span class="project-year">
-                                2026
-                            </span>
-                        </div>
-
-                        <h3>
-                            Autonomous Robotic System
-                        </h3>
-
-                        <p>
-                            Designed and built an autonomous robotic platform
-                            capable of navigating an unpredictable environment
-                            using custom mechanical and electrical systems.
-                        </p>
-
-                        <div class="tags">
-                            <span>CAD</span>
-                            <span>3D Printing</span>
-                            <span>Arduino</span>
-                            <span>Controls</span>
-                        </div>
-
-                        <a href="#" class="project-link">
-                            View Project →
-                        </a>
-
-                    </div>
-
-                </article>
-
-
-                <!-- Project 2 -->
-                <article class="project-card">
-
-                    <div class="project-image project-image-2">
-                        <div class="project-overlay">
-                            <span>02</span>
-                        </div>
-                    </div>
-
-                    <div class="project-content">
-
-                        <div class="project-top">
-                            <span class="project-type">
-                                ELECTRICAL
-                            </span>
-
-                            <span class="project-year">
-                                2025
-                            </span>
-                        </div>
-
-                        <h3>
-                            Embedded Control System
-                        </h3>
-
-                        <p>
-                            A custom embedded system designed to monitor sensors
-                            and control multiple outputs in real time.
-                        </p>
-
-                        <div class="tags">
-                            <span>C++</span>
-                            <span>PCB Design</span>
-                            <span>Microcontrollers</span>
-                        </div>
-
-                        <a href="#" class="project-link">
-                            View Project →
-                        </a>
-
-                    </div>
-
-                </article>
-
-
-                <!-- Project 3 -->
-                <article class="project-card">
-
-                    <div class="project-image project-image-3">
-                        <div class="project-overlay">
-                            <span>03</span>
-                        </div>
-                    </div>
-
-                    <div class="project-content">
-
-                        <div class="project-top">
-                            <span class="project-type">
-                                DESIGN
-                            </span>
-
-                            <span class="project-year">
-                                2025
-                            </span>
-                        </div>
-
-                        <h3>
-                            Parametric Mechanical Assembly
-                        </h3>
-
-                        <p>
-                            Developed a fully parametric CAD assembly with
-                            interchangeable components and optimized geometry.
-                        </p>
-
-                        <div class="tags">
-                            <span>SolidWorks</span>
-                            <span>CAD</span>
-                            <span>FEA</span>
-                        </div>
-
-                        <a href="#" class="project-link">
-                            View Project →
-                        </a>
-
-                    </div>
-
-                </article>
-
-
-                <!-- Project 4 -->
-                <article class="project-card">
-
-                    <div class="project-image project-image-4">
-                        <div class="project-overlay">
-                            <span>04</span>
-                        </div>
-                    </div>
-
-                    <div class="project-content">
-
-                        <div class="project-top">
-                            <span class="project-type">
-                                SOFTWARE
-                            </span>
-
-                            <span class="project-year">
-                                2024
-                            </span>
-                        </div>
-
-                        <h3>
-                            Engineering Analysis Tool
-                        </h3>
-
-                        <p>
-                            Built a software tool for automating engineering
-                            calculations and visualizing system performance.
-                        </p>
-
-                        <div class="tags">
-                            <span>Python</span>
-                            <span>NumPy</span>
-                            <span>Data Analysis</span>
-                        </div>
-
-                        <a href="#" class="project-link">
-                            View Project →
-                        </a>
-
-                    </div>
-
-                </article>
-
-            </div>
-
-        </section>
-
-
-        <!-- Experience -->
-        <section id="experience" class="section experience-section">
-
-            <div class="section-heading">
-
-                <div>
-                    <p class="section-number">02 / EXPERIENCE</p>
-
-                    <h2>
-                        Where I've worked.
-                    </h2>
-                </div>
-
-            </div>
-
-
-            <div class="timeline">
-
-                <div class="timeline-item">
-
-                    <div class="timeline-date">
-                        2025 — PRESENT
-                    </div>
-
-                    <div class="timeline-content">
-
-                        <h3>
-                            Engineering Intern
-                        </h3>
-
-                        <h4>
-                            Company Name
-                        </h4>
-
-                        <p>
-                            Worked on the design, testing, and optimization of
-                            engineering systems. Collaborated with engineers
-                            across multiple disciplines to develop and validate
-                            new designs.
-                        </p>
-
-                    </div>
+                    <span class="card-link">
+                        View Project →
+                    </span>
 
                 </div>
 
+            </a>
 
-                <div class="timeline-item">
 
-                    <div class="timeline-date">
-                        2024 — 2025
-                    </div>
+            <a href="projects/project-3.html" class="featured-project">
 
-                    <div class="timeline-content">
+                <div class="featured-image">
+                    <img src="images/project-3.jpg" alt="Project 3">
+                    <span class="project-number">03</span>
+                </div>
 
-                        <h3>
-                            Undergraduate Researcher
-                        </h3>
+                <div class="featured-content">
 
-                        <h4>
-                            University / Research Lab
-                        </h4>
+                    <span class="project-type">CAD / FABRICATION</span>
 
-                        <p>
-                            Conducted research involving experimental design,
-                            data collection, prototyping, and technical analysis.
-                        </p>
+                    <h3>Parametric Mechanical Assembly</h3>
 
-                    </div>
+                    <p>
+                        A fully parametric mechanical assembly designed for
+                        rapid iteration and fabrication.
+                    </p>
+
+                    <span class="card-link">
+                        View Project →
+                    </span>
 
                 </div>
 
+            </a>
 
-                <div class="timeline-item">
+        </div>
 
-                    <div class="timeline-date">
-                        2023 — 2024
-                    </div>
+    </section>
 
-                    <div class="timeline-content">
 
-                        <h3>
-                            Engineering Team Member
-                        </h3>
+    <!-- EXPERIENCE -->
 
-                        <h4>
-                            Student Engineering Organization
-                        </h4>
+    <section class="section experience-preview">
 
-                        <p>
-                            Designed and fabricated components for a
-                            multidisciplinary engineering project while working
-                            as part of a technical team.
-                        </p>
+        <div class="section-heading">
 
-                    </div>
+            <div>
+                <p class="section-number">02 / EXPERIENCE</p>
 
-                </div>
-
+                <h2>Where I've worked.</h2>
             </div>
 
-        </section>
+            <a href="experience.html" class="section-link">
+                View Full Experience →
+            </a>
+
+        </div>
 
 
-        <!-- Skills -->
-        <section id="skills" class="section skills-section">
+        <div class="experience-list">
 
-            <div class="section-heading">
 
-                <div>
-                    <p class="section-number">03 / SKILLS</p>
+            <a href="experience.html#experience-1" class="experience-preview-item">
 
-                    <h2>
-                        Tools I use.
-                    </h2>
+                <div class="experience-date">
+                    2025 — PRESENT
                 </div>
 
-            </div>
+                <div class="experience-info">
 
+                    <h3>Engineering Intern</h3>
 
-            <div class="skills-grid">
+                    <p>Company Name</p>
 
-                <div class="skill-category">
-
-                    <span class="skill-number">01</span>
-
-                    <h3>Design & CAD</h3>
-
-                    <ul>
-                        <li>SolidWorks</li>
-                        <li>Fusion 360</li>
-                        <li>AutoCAD</li>
-                        <li>GD&T</li>
-                        <li>FEA</li>
-                    </ul>
+                    <span>
+                        Design · Prototyping · Testing
+                    </span>
 
                 </div>
 
+                <div class="experience-arrow">
+                    →
+                </div>
 
-                <div class="skill-category">
+            </a>
 
-                    <span class="skill-number">02</span>
 
-                    <h3>Programming</h3>
+            <a href="experience.html#experience-2" class="experience-preview-item">
 
-                    <ul>
-                        <li>Python</li>
-                        <li>C / C++</li>
-                        <li>MATLAB</li>
-                        <li>Git</li>
-                        <li>Data Analysis</li>
-                    </ul>
+                <div class="experience-date">
+                    2024 — 2025
+                </div>
+
+                <div class="experience-info">
+
+                    <h3>Undergraduate Researcher</h3>
+
+                    <p>University / Research Lab</p>
+
+                    <span>
+                        Research · Analysis · Experimental Design
+                    </span>
 
                 </div>
 
+                <div class="experience-arrow">
+                    →
+                </div>
 
-                <div class="skill-category">
+            </a>
 
-                    <span class="skill-number">03</span>
 
-                    <h3>Fabrication</h3>
+            <a href="experience.html#experience-3" class="experience-preview-item">
 
-                    <ul>
-                        <li>3D Printing</li>
-                        <li>CNC Machining</li>
-                        <li>Laser Cutting</li>
-                        <li>Welding</li>
-                        <li>Prototyping</li>
-                    </ul>
+                <div class="experience-date">
+                    2023 — 2024
+                </div>
+
+                <div class="experience-info">
+
+                    <h3>Engineering Team Member</h3>
+
+                    <p>Student Engineering Organization</p>
+
+                    <span>
+                        CAD · Fabrication · Team Design
+                    </span>
 
                 </div>
 
-
-                <div class="skill-category">
-
-                    <span class="skill-number">04</span>
-
-                    <h3>Engineering</h3>
-
-                    <ul>
-                        <li>Mechanics</li>
-                        <li>Thermodynamics</li>
-                        <li>Controls</li>
-                        <li>Electronics</li>
-                        <li>System Design</li>
-                    </ul>
-
+                <div class="experience-arrow">
+                    →
                 </div>
 
-            </div>
+            </a>
 
-        </section>
+        </div>
 
-
-        <!-- About -->
-        <section id="about" class="about-section">
-
-            <div class="about-content">
-
-                <p class="section-number">
-                    04 / ABOUT
-                </p>
-
-                <h2>
-                    I like figuring out<br>
-                    how things work.
-                </h2>
-
-                <p>
-                    I'm an engineering student who enjoys taking ideas from
-                    a sketch on paper to something that actually works.
-                    My interests span mechanical design, electronics,
-                    programming, and hands-on fabrication.
-                </p>
-
-                <p>
-                    This site is a collection of the projects, experiments,
-                    and experiences that have shaped how I approach engineering.
-                </p>
-
-            </div>
-
-            <div class="about-side">
-
-                <div class="quote">
-                    "The best way to learn engineering is to build something
-                    that doesn't work — and figure out why."
-                </div>
-
-            </div>
-
-        </section>
+    </section>
 
 
-        <!-- Contact -->
-        <section id="contact" class="contact-section">
+    <!-- ABOUT -->
 
-            <p class="section-number">
-                05 / CONTACT
-            </p>
+    <section class="about-preview">
+
+        <div>
+
+            <p class="section-number">03 / ABOUT</p>
 
             <h2>
-                Have a project<br>
-                in mind?
+                I like figuring out<br>
+                how things work.
             </h2>
 
+        </div>
+
+        <div>
+
             <p>
-                I'm always interested in engineering projects,
-                research opportunities, and interesting problems.
+                I'm an engineering student who enjoys taking ideas from
+                a sketch on paper to something that actually works.
             </p>
 
-            <a href="mailto:your.email@example.com" class="contact-button">
-                your.email@example.com
-                <span>↗</span>
+            <p>
+                My interests span mechanical design, electronics,
+                programming, fabrication, and experimental engineering.
+            </p>
+
+            <a href="experience.html" class="card-link">
+                More About Me →
             </a>
 
-        </section>
-
-    </main>
-
-
-    <!-- Footer -->
-    <footer>
-
-        <div class="footer-left">
-            © 2026 Your Name
         </div>
 
-        <div class="footer-links">
-            <a href="#">GitHub</a>
-            <a href="#">LinkedIn</a>
-            <a href="#">Resume</a>
-        </div>
+    </section>
 
-        <div class="footer-right">
-            ENGINEER / BUILDER
-        </div>
 
-    </footer>
+    <!-- CONTACT -->
 
+    <section id="contact" class="contact-section">
+
+        <p class="section-number">04 / CONTACT</p>
+
+        <h2>
+            Let's build<br>
+            something.
+        </h2>
+
+        <p>
+            Interested in working together, discussing a project,
+            or just talking engineering?
+        </p>
+
+        <a href="mailto:your.email@example.com" class="contact-button">
+            your.email@example.com →
+        </a>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <span>© 2026 Your Name</span>
+
+    <div>
+        <a href="#">GitHub</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Resume</a>
+    </div>
+
+    <span>ENGINEERING PORTFOLIO</span>
+
+</footer>
 
 </body>
 </html>
+```
