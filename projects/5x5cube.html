@@ -133,43 +133,8 @@
 
         <p>
             The goal for this project was to model and print a fully functional 5x5 Rubik's Cube. The only parts that I
-            was allowing to not be 3D printed was 6 screws and springs to hold the core together
+            was allowing to not be 3D printed was 6 screws and 6 springs to hold the core together
         </p>
-
-    </div>
-
-</section>
-
-
-<!-- =========================================================
-     02 — GOALS / REQUIREMENTS
-========================================================= -->
-
-<section class="project-detail-section">
-
-    <div class="project-detail-label">
-        
-    </div>
-
-    <div class="project-detail-content">
-
-        <h2>
-            Engineering Goals
-        </h2>
-
-        <p>
-            The requirements laid out for this project was for the arm to be standalone without
-            the need of external help from a computer or cameras mounted somewhere other than on the robot.
-            It also needs to be able to pick up a can of pop at its fully extended length of roughly 17 inches. 
-            It listens to commands from speech, interpretes them locally, and completes the given task.
-        </p>
-
-        <ul>
-            <li>Keeping all parts local to the robot arm</li>
-            <li>Moving a full can of pop autonomously</li>
-            <li>Respond to verbal commands</li>
-            <li>Locate parts through camera mounted on arm</li>
-        </ul>
 
     </div>
 
@@ -193,8 +158,8 @@
         </h2>
 
         <p>
-            The first step in designing the cube was to disassemble a 5x5 that I had to see how the internals worked and
-            interacted. The internals of a Rubik's Cube is complicated due to parts interlocking in a way that allows
+            The first step in designing the cube was to disassemble a 5x5 that I had, to see how the internals worked and
+            interacted. The internals of a Rubik's Cube are complicated due to parts interlocking in a way that allows
             rotational movement that can pass off pieces to a new layer. This design restricts the pieces to be physically
             attached to the other pieces.
         </p>
@@ -245,7 +210,7 @@
         </p>
 
         <p>
-            The most major modeling change was when the internals of the cube was designed using a square inside instead
+            The most major modeling change was when the internals of the cube was designed with a square shape inside instead
             of a circle. This led to all five major pieces needing large redesigns. This was the only major change that was
             needed as every other change was continuous small adjustments. These modifications came from rigorous checking
             and the cube was thouroughly designed before any printing took place.
@@ -289,9 +254,9 @@
         </h2>
 
         <p>
-            All parts except for the screws and springs were 3D printed:
-            corner, outer edge, middle edge, center center, center edge, center corner, center cap, core.
             Screws and springs were purchased and the core was threaded for the screws.
+            All other parts were 3D printed:
+            corner, outer edge, middle edge, center center, center edge, center corner, center cap, core.
         </p>
 
         <p>
@@ -320,7 +285,7 @@
 
 
 <!-- =========================================================
-     06 — servos and Pi
+     06 — final results and lessons learned
 ========================================================= -->
 
 <section class="project-detail-section">
@@ -336,14 +301,14 @@
         </h2>
 
         <p>
-            When all the parts were printed the cube was assembled and stickers were applied. The cube fully functioned as
-            intended and could complete the checkboard pattern which proves every layer has the ability to move.
+            When all the parts were printed, the cube was assembled and stickers were applied. The cube fully functioned as
+            intended and could complete the checkboard pattern. This proves every layer has the ability to move.
         </p>
 
         <p>
             The approach taken in designing this cube was to precisely and thouroughly model the parts before anything was
-            printed and tested which turned out well because the main difficulty is the geometry of the parts rather than
-            any structural component. This worked because there were no major iterations after the parts were printed, and
+            printed and tested. This turned out well because the main difficulty is the geometry of the parts rather than
+            any structural component. This led to no major iterations after the parts were printed, and
             it taught me that high quality up front work pays off and saves time in the long run.
         </p>
 
