@@ -133,7 +133,7 @@
         </p>
 
         <p>
-            The road of one taking one trip from the car to the playing location led to the idea of a briefcase amp. A 
+            The idea of someone taking a single trip from the car to the playing location led to the idea of a briefcase amp. A 
             briefcase that contained the whole setup where the only thing that needed to be done is open it and plug it 
             in and its ready to play.
         </p>
@@ -188,23 +188,29 @@
     <div class="project-detail-content">
 
         <h2>
-            Overall Design Choice
+            Initial Design - Size & Shape
         </h2>
 
         <p>
-            For a desk project of this size the most efficient way to get physical parts is through 3D printing. 
-            The robot was designed for 3D printing for framing and supports with friction fit holes for bearings, gears and screws.
-            To get the parts screwed together, brass threaded inserts were chosen for a strong reliable mounts for screws. 
-            To compute the speech to text and live video feedback, the computing power of a raspberry pi was needed. To drive the Servos
-            a hat was chosen to attach to the raspberry pi for the ease of connection and shared language.
+            I modeled the design in Onshape to have a plan and be able to visualize how all the parts would fit into 
+            the briefcase. This made it easy to organize and see how the parts interacted as the briefcase is opened and 
+            closed.
         </p>
 
         <p>
-            The option of routing the computing through a computer would have been cheaper but it was ultimately decided that
-            keeping the computing local was worth the extra price. Using an arduino was also in the decision making due to
-            its popularity and large amount of online advice and help, however the languages would have conflicted with the
-            raspberry pi which would have most likely taken more time to figure out than the online help would save which
-            is why a hat directly compatible with the raspberry pi was chosen.
+            The briefcase needed to have plenty of space for the speaker cab otherwise the tone of the sound would be poor.
+            It also needed space for the amp head, wires, and multi fx. This led to a design where the multi fx would be 
+            mounted on the lid and when closed would be stored above storage for the amp head, bluetooth instrument cables,
+            and various cords. The case needed to be plug and play so the multi fx needed to function while still mounted 
+            in the case. The solution for this was to have the lid walls a different height that the bottom walls while keeping 
+            the walls with hinges the same height so when the case was open the bottom and lid lay flush on the ground.
+        </p>
+
+        <p>
+            The speaker cab needed to be as small as possible to keep the size down but when you shrink the size it worsens
+            tone. The compromise made was to make the cab smaller than ideal but put polyfil inside which makes the cab sound
+            similar to a bigger cab. This decision was made because convenience is prioritized over tone for the goal of this
+            project.
         </p>
 
         <div class="project-detail-gallery">
@@ -227,7 +233,7 @@
 
 
 <!-- =========================================================
-     04 — 3D Modeling and Design
+     04 — Multi fx and amp head mount
 ========================================================= -->
 
 <section class="project-detail-section">
@@ -239,21 +245,22 @@
     <div class="project-detail-content">
 
         <h2>
-            3D Modeling and Design
+            Mounts for the Removable Components
         </h2>
 
         <p>
-            The 3D model was modeled in its entirety using Onshape. Each arm segment had its own assembly, including the printed
-            parts, bearings, gears, and servos. Each of these individual subassemblies were then assembled into one master assembly
-            to show the entire robot arm and its functionality. The master assembly shows mating interactions to simulate
-            the expected movement of the arm.
+            The multi fx and amp head were expensive and I wanted the option to use the multi fx outside of the case if 
+            desired. Both components are made with a magnetic metal so I designed and printed mounts that fit the 
+            corresponding components and contained magnets to secure them. Using magnets allowed the components to be secure 
+            without the need for latches or straps which made it significantly simpler and easier to remove them from the 
+            case if needed.
         </p>
 
         <p>
-            Some design decisions that were made through the modeling process were to place the servos closer to the base
-            than the joint they are controlling to reduce the moment of the arm when it is stretched out. The servos are
-            connected to 3D printed gears to attach to GT2 belts that attach to the joints. The grabber has a complicated
-            pulley system that ultimately did not work after testing and different approaches are in progress.
+            The housing for the bluetooth instrument cables also needed to be secured in a way that could be easily removed.
+            A different strategy needed to be used because it didnt have any magnetic metals on it so instead I designed a
+            case and wrapped in duct tape to grip it better. Ultimately it is secure but can be easliy removed without any 
+            moving parts which was desired.
         </p>
 
         <!-- Optional image for calculations / FEA / graphs -->
@@ -278,7 +285,7 @@
 
 
 <!-- =========================================================
-     05 — Mechanical Fabrication
+     05 — Wiring and setting up the speaker cab
 ========================================================= -->
 
 <section class="project-detail-section">
@@ -290,18 +297,15 @@
     <div class="project-detail-content">
 
         <h2>
-            Printing and Assembling the Arm
+            Wiring and Setting up the Speaker Cab
         </h2>
 
         <p>
-            The parts were all printed and the threaded inserts were placed into the parts as needed. The arm was then
-            assembled with all the bearings, belts, parts, screws, and servos.
-        </p>
-
-        <p>
-            All the parts fit together as expected from the 3D model however there were some parts that were difficult to
-            reach the screws that connect them. This required some of the parts to be sanded down or drilled through in
-            order to reach the necessary screw.
+            All aspects of the briefcase were now figured out except for the cab. A speaker needed to be mounted to the cab
+            built into the case and wired into the amp head which delivers power to the speaker. I wanted a clean look for
+            the inside of the cab and didn't want exposed wiring or soldering that could be see or interacted with. To achieve 
+            this I wired the speaker to a 1/4 inch aux input that was mounted on the side of the cab. A 1/4 inch aux cord 
+            could then be plugged into this input to the amp head for a clean look with no exposed wiring.
         </p>
 
         <div class="project-detail-gallery">
@@ -324,7 +328,7 @@
 
 
 <!-- =========================================================
-     06 — servos and Pi
+     06 — Finishing Touches
 ========================================================= -->
 
 <section class="project-detail-section">
@@ -336,21 +340,21 @@
     <div class="project-detail-content">
 
         <h2>
-            Servos and Raspberry Pi setup
+            Finishing Touches and Lessons Learned
         </h2>
 
         <p>
-            The servos need power and a brain. The hat that was chosen cannot have 10 amps of 6V current run through it
-            at once which is the power of all servos at max power at once. To solve this issue the power supply was cut and
-            spliced directly to the servo wires to power the servos directly without going through the board. The signal 
-            wires were then ran to the board so the board could still communicate with the servos. The ribbon cable that connects
-            the raspberry pi to the hat also had the wires going to the wrong locations so the wires needed to be rerouted
-            in order for the raspberry pi to effectively communicate with the hat.
+            Now that all of the technical stuff was figured out, all that was left was to make the case look good. I covered
+            the inside with a black fabric and the outside with a tan fabric. I used brass components for the handle, hinges,
+            and corners and the briefcase bass amp was complete.
         </p>
 
         <p>
-            These modifications all work as intended and the raspberry pi contains scripts to move the servos which are correctly
-            powered outside of the hat.
+            I had a lot of fun designing and building this project however I did not enjoy adding the fabric so for future 
+            projects I just need to remember to stick the technical stuff and stay away from tedious decorations. However, I 
+            also learned some technical lessons as well. I learned power routing and management through the limits of the 
+            amp head and what the speaker required. I also became more confortable with wire gauges and corresponding loads
+            allowed.
         </p>
 
         <div class="project-detail-gallery">
@@ -373,74 +377,6 @@
 
 
 <!-- =========================================================
-     07 — Coding Progress
-========================================================= -->
-
-<section class="project-detail-section">
-
-    <div class="project-detail-label">
-        
-    </div>
-
-    <div class="project-detail-content">
-
-        <h2>
-            Coding the Robot
-        </h2>
-
-        <p>
-            The electrical components work as intended and the raspberry pi can effectively communicate with all of the servos.
-            Scripts have been written that can control and test each servo that is mounted on the robot arm, however the
-            structural integrity of the robot has not been established enough to move much further in the coding part of this 
-            project.
-        </p>
-
-        <p>
-            These scripts allow individual testing of each servo and how the arm behaves and interacts with each movement. This is
-            very helpful in the iterative testing portion of this project because it makes problems easy to diagnose which will speed
-            up progress of the project.
-        </p>
-
-    </div>
-
-</section>
-
-
-<!-- =========================================================
-     08 — Final Result and Lessons Learned
-========================================================= -->
-
-<section class="project-detail-section">
-
-    <div class="project-detail-label">
-        
-    </div>
-
-    <div class="project-detail-content">
-
-        <h2>
-            Final Result and Lessons Learned
-        </h2>
-
-        <p>
-            The final result is a structurally sound robot arm and a safe servo system that can easily be coded and tested.
-            The belt on the shoulder slips but all other joints work well. Potential decisions moving forward might include
-            mounting the servo directly to remove the possibility to slip or purchase manufactured GT2 belts to prevent slipping.
-        </p>
-
-        <p>
-            Changes are currently being pursued for the shoulder and the grabber. I have learned about how motor controllers,
-            servos, and raspberry pis work through this project and how to apply them to a moving mechanical system. I am 
-            continuing to deepen my understanding of the iterative process of rapid prototyping and what it takes to complete
-            a project to complete a goal.
-        </p>
-
-    </div>
-
-</section>
-
-
-<!-- =========================================================
      PROJECT DETAILS
 ========================================================= -->
 
@@ -448,17 +384,17 @@
 
     <div>
         <span>PROJECT TYPE</span>
-        <strong>Mechanical / Robotics / AI</strong>
+        <strong>Mechanical Design / Wiring & Audio / Cosmetic</strong>
     </div>
 
     <div>
         <span>SOFTWARE</span>
-        <strong>Onshape / Python</strong>
+        <strong>Onshape</strong>
     </div>
 
     <div>
         <span>SKILLS</span>
-        <strong>CAD / Wiring / Controls / Coding</strong>
+        <strong>CAD / Wiring / Detailed</strong>
     </div>
 
 </section>
