@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>3D Printed Chess Set | Elijah Parsons</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+<!-- =========================================================
+     NAVIGATION
+========================================================= -->
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+        <a href="../index.html" class="logo">
+            <span class="logo-symbol">&lt;/&gt;</span>
+            <span>Elijah Parsons</span>
+        </a>
+
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../projects.html" class="active">Projects</a>
+            <a href="../experience.html">Experience</a>
+        </nav>
+
+        <a href="../index.html#contact" class="nav-contact">
+            Contact
+        </a>
+
+    </div>
+
+</header>
+
+
+<main>
+
+
+<!-- =========================================================
+     PROJECT HEADER
+========================================================= -->
+
+<section class="project-detail-header">
+
+    <p class="project-detail-number">
+        
+    </p>
+
+    <h1>
+        3D Printed Chess Set
+    </h1>
+
+    <p class="project-detail-intro">
+        I pursued this project because of an interest in chess and to experiment with 3D printing.
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     MAIN PROJECT IMAGE
+========================================================= -->
+
+<section class="project-detail-image">
+
+    <img
+        src="../images/PROJECT-main.jpg"
+        alt="PROJECT NAME"
+    >
+
+</section>
+
+
+<!-- =========================================================
+     PROJECT INFORMATION
+========================================================= -->
+
+<section class="project-detail-info">
+
+    <div>
+        <span>ROLE</span>
+        <strong>Designer & Fabricator</strong>
+    </div>
+
+    <div>
+        <span>DATE</span>
+        <strong>2026</strong>
+    </div>
+
+    <div>
+        <span>TOOLS</span>
+        <strong>Onshape, 3D printing</strong>
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     01 — OVERVIEW
+========================================================= -->
+
+<section class="project-detail-section">
+
+    <div class="project-detail-label">
+        
+    </div>
+
+    <div class="project-detail-content">
+
+        <h2>
+            The Why
+        </h2>
+
+        <p>
+            I pursued this project mainly from a why not mindset. At the time I had just recently gotten a 3D printer and
+            wanted a project to test it out, so I modeled a chess set on onshape and printed it out.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     02 — GOALS / REQUIREMENTS
+========================================================= -->
+
+<section class="project-detail-section">
+
+    <div class="project-detail-label">
+        
+    </div>
+
+    <div class="project-detail-content">
+
+        <h2>
+            The Vision
+        </h2>
+
+        <p>
+            What I wanted from this project was a cool looking chess set that showed off the capabilities of my printer 
+            and 3D modeling. My printer is capable of printing a little over eight inches in the z axis so my pieces were 
+            sized off of an eight inch king.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     03 — DESIGN
+========================================================= -->
+
+<section class="project-detail-section">
+
+    <div class="project-detail-label">
+        
+    </div>
+
+    <div class="project-detail-content">
+
+        <h2>
+            Designing the Pieces and Board
+        </h2>
+
+        <p>
+            The route I took to design the pieces was to create a side profile of the pieces and then revolve them around 
+            a center axis to create the solid part. Most pieces took the same shape just with different sizes and proportions 
+            so I designed the king and then duplicated it for each different part and adjusted the dimensions as desired. 
+            The knight was completely unique so it was the part that took the longest. Each part had some features 
+            of asymmetry revolved around the axis so additional extrusions were needed.
+        </p>
+
+        <p>
+            I wanted the board to be 3D printed as well so I needed a way for the tiles to interlock in a repeating pattern 
+            to minimize the amount of unique parts. I ended up with one unique part for the center pieces, two unique parts 
+            for the edges and one unique part for the corner. These pieces each had hooks and corresponding cavities to 
+            interlock together.
+        </p>
+
+        <div class="project-detail-gallery">
+
+            <img
+                src="../images/PROJECT-design-1.jpg"
+                alt="PROJECT design"
+            >
+
+            <img
+                src="../images/PROJECT-design-2.jpg"
+                alt="PROJECT design process"
+            >
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     04 — 3D Modeling and Design
+========================================================= -->
+
+<section class="project-detail-section">
+
+    <div class="project-detail-label">
+        
+    </div>
+
+    <div class="project-detail-content">
+
+        <h2>
+            Printing the Parts
+        </h2>
+
+        <p>
+            These were the first parts that I designed and printed on my own so I experimented with infill, outside layers, 
+            layer heights and all the other settings that you need to learn. These big pieces also took a lot of filament so 
+            I tried to find ways to cut costs my optimizing the material use. I tested zero infill which ultimately did not 
+            work and found that five percent infill was the best option for this project.
+        </p>
+
+        <p>
+            Also pieces this big and the fact that 32 chess pieces and 64 board pieces needed to be printed from one printer, 
+            time was also something that needed to be considered with the print settings. This led to using .30mm layer heights 
+            which printed quickly while still looking plenty small enough compared to the size of the pieces.
+        </p>
+
+        <!-- Optional image for calculations / FEA / graphs -->
+
+        <div class="project-detail-gallery">
+
+            <img
+                src="../images/PROJECT-analysis-1.jpg"
+                alt="Engineering analysis"
+            >
+
+            <img
+                src="../images/PROJECT-analysis-2.jpg"
+                alt="Engineering analysis"
+            >
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     05 — Results
+========================================================= -->
+
+<section class="project-detail-section">
+
+    <div class="project-detail-label">
+        
+    </div>
+
+    <div class="project-detail-content">
+
+        <h2>
+            Final Result and Lessons Learned
+        </h2>
+
+        <p>
+            The final result was a 3D printed chess board that measured 16 inches along each side and a 3D printed chess 
+            set that measured to an 8 inch king. I entered this project into my county 4H fair and won a Grand Champion
+            Ribbon and got to send it to the state fair.
+        </p>
+
+        <p>
+            I learned a lot through this project as it was the first time I 3D printed with the settings that I chose.
+            By my success in my county fair I also learned that projects and technology can be appreciated by others and 
+            should be shared.
+        </p>
+
+        <div class="project-detail-gallery">
+
+            <img
+                src="../images/PROJECT-build-1.jpg"
+                alt="Project fabrication"
+            >
+
+            <img
+                src="../images/PROJECT-build-2.jpg"
+                alt="Project assembly"
+            >
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     PROJECT DETAILS
+========================================================= -->
+
+<section class="project-detail-info">
+
+    <div>
+        <span>PROJECT TYPE</span>
+        <strong>CAD / 3D Printing</strong>
+    </div>
+
+    <div>
+        <span>SOFTWARE</span>
+        <strong>Onshape</strong>
+    </div>
+
+    <div>
+        <span>SKILLS</span>
+        <strong>CAD</strong>
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     NAVIGATION
+========================================================= -->
+
+<section class="project-detail-back">
+
+    <a href="../projects.html">
+        ← Back to Projects
+    </a>
+
+</section>
+
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+    <span>© 2026 Elijah Parsons</span>
+
+    <div>
+        <a href="#">GitHub</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Resume</a>
+    </div>
+
+    <span>ENGINEERING PORTFOLIO</span>
+
+</footer>
+
+
+</body>
+</html>
