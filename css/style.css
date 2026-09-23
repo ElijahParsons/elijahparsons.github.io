@@ -1255,21 +1255,6 @@ footer a:hover {
         gap: 40px;
     }
 
-    .project-row {
-
-        grid-template-columns: 1fr;
-    }
-
-    .project-row-image {
-
-        min-height: 350px;
-    }
-
-    .project-row-content {
-
-        padding: 45px 0;
-    }
-
     .experience-card-body {
 
         grid-template-columns: 1fr;
