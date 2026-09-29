@@ -53,7 +53,7 @@ a {
 :root {
     --background: #f3ead8;
     --surface: #f3ead8;
-    --surface-2: #f3ead8;
+    --surface-2: #8a8175;
     --border: #cfc1aa;
     --border-light: #b9a98f;
 
@@ -611,7 +611,7 @@ nav a.active {
 
     overflow: hidden;
 
-    background: #f3ead8;
+    background: var(--surface-2);
 }
 
 .featured-image img {
