@@ -52,8 +52,8 @@ a {
 
 :root {
     --background: #f3ead8;
-    --surface: #ebe0cc;
-    --surface-2: #e2d4bd;
+    --surface: #f3ead8;
+    --surface-2: #f3ead8;
     --border: #cfc1aa;
     --border-light: #b9a98f;
 
@@ -425,7 +425,7 @@ nav a.active {
 
     border: 1px solid #294050;
 
-    background-color: #e9ddc7;
+    background-color: #f3ead8;
 
     background-image:
         linear-gradient(
@@ -611,7 +611,7 @@ nav a.active {
 
     overflow: hidden;
 
-    background: #11171d;
+    background: #f3ead8;
 }
 
 .featured-image img {
