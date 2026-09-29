@@ -417,9 +417,9 @@ nav a.active {
 
     position: relative;
 
-    width: auto;
+    width: 420px;
 
-    height: 100%;
+    height: 420px;
 
     overflow: hidden;
 
@@ -545,9 +545,9 @@ nav a.active {
 
     position: absolute;
 
-    left: 0px;
+    left: 20px;
 
-    bottom: 0px;
+    bottom: 18px;
 
     color: var(--accent);
 
@@ -1585,5 +1585,58 @@ footer a:hover {
 
     .project-detail-section .project-detail-image {
         height: 280px;
+    }
+}
+
+/* =========================================================
+   IMAGE FINISH — CONSISTENT BACKGROUNDS AND BORDERS
+========================================================= */
+
+/* Keep empty space around contained images the same color as the page. */
+.featured-image,
+.project-row-image,
+.experience-image,
+.about-image,
+.project-detail-image {
+    background-color: var(--background);
+}
+
+/* Give every site image a subtle border. */
+img {
+    border: 1px solid var(--border);
+    background-color: var(--background);
+}
+
+/* Ensure the homepage About image stays visible on desktop. */
+.about-content {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: center;
+    gap: 50px;
+}
+
+.about-image {
+    display: block;
+    min-width: 0;
+    width: 100%;
+    max-width: 500px;
+    visibility: visible;
+    opacity: 1;
+}
+
+.about-image img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    visibility: visible;
+    opacity: 1;
+    object-fit: contain;
+}
+
+@media (max-width: 900px) {
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
     }
 }
