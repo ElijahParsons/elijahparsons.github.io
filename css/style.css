@@ -53,7 +53,7 @@ a {
 :root {
     --background: #f3ead8;
     --surface: #f3ead8;
-    --surface-2: #8a8175;
+    --surface-2: #c3a98a;
     --border: #cfc1aa;
     --border-light: #b9a98f;
 
@@ -672,7 +672,7 @@ nav a.active {
 
     margin-bottom: 22px;
 
-    color: var(--muted);
+    color: var(--surface-2);
 
     font-size: 13px;
 
