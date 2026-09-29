@@ -417,9 +417,9 @@ nav a.active {
 
     position: relative;
 
-    width: 100%;
+    width: auto;
 
-    height: auto;
+    height: 100%;
 
     overflow: hidden;
 
@@ -545,9 +545,9 @@ nav a.active {
 
     position: absolute;
 
-    left: 1px;
+    left: 0px;
 
-    bottom: 1px;
+    bottom: 0px;
 
     color: var(--accent);
 
