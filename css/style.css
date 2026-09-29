@@ -542,18 +542,27 @@ nav a.active {
 }
 
 .blueprint-label {
-
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 240px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
 
-    left: 20px;
-
-    bottom: 18px;
-
-    color: var(--accent);
-
-    font-family: "Space Mono", monospace;
-
-    font-size: 10px;
+.engineering-image {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border: 1px solid var(--border);
+    background: var(--background);
 }
 
 
@@ -1592,19 +1601,12 @@ footer a:hover {
    IMAGE FINISH — CONSISTENT BACKGROUNDS AND BORDERS
 ========================================================= */
 
-/* Keep empty space around contained images the same color as the page. */
-.featured-image,
-.project-row-image,
-.experience-image,
-.about-image,
-.project-detail-image {
-    background-color: var(--background);
-}
-
 /* Give every site image a subtle border. */
 img {
-    border: 1px solid var(--border);
-    background-color: var(--background);
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: transparent;
 }
 
 /* Ensure the homepage About image stays visible on desktop. */
@@ -1639,4 +1641,59 @@ img {
         grid-template-columns: 1fr;
         gap: 30px;
     }
+}
+
+/* Borders around actual project images */
+.featured-image img,
+.project-row-image img,
+.project-detail-image img {
+    border: 1px solid var(--border);
+}
+
+/* =========================================================
+   IMAGE WRAPPERS — BORDERS AROUND ACTUAL IMAGES
+========================================================= */
+
+/* Center the image wrapper inside its available space */
+.project-row-image,
+.project-detail-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: var(--background);
+}
+
+/* Wrapper shrinks to the image's actual dimensions */
+.image-frame {
+    display: inline-flex;
+    width: fit-content;
+    height: fit-content;
+    max-width: 100%;
+    max-height: 100%;
+    border: 1px solid var(--border);
+    overflow: hidden;
+}
+
+/* Image stays within the wrapper */
+.image-frame img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border: none;
+}
+
+/* Project listing image area */
+.project-row-image .image-frame {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Individual project page image area */
+.project-detail-image .image-frame {
+    max-width: 100%;
+    max-height: 100%;
 }
