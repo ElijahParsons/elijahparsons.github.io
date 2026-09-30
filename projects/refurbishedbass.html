@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Desk Robot Arm | Elijah Parsons</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+<!-- =========================================================
+     NAVIGATION
+========================================================= -->
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+        <a href="../index.html" class="logo">
+            <span class="logo-symbol">&lt;/&gt;</span>
+            <span>Elijah Parsons</span>
+        </a>
+
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../projects.html" class="active">Projects</a>
+            <a href="../experience.html">Experience</a>
+        </nav>
+
+        <a href="../index.html#contact" class="nav-contact">
+            Contact
+        </a>
+
+    </div>
+
+</header>
+
+
+<main>
+
+
+<!-- =========================================================
+     PROJECT HEADER
+========================================================= -->
+
+<section class="project-detail-hero">
+
+    <div class="project-detail-header">
+
+        <h1>
+            Refurbished Bass Guitar
+        </h1>
+
+        <p class="project-detail-intro">
+            The goal of this project is to restore an old low quality bass guitar to better understand how bass guitars 
+            work. I figured its not everyday that I have the opportunity to have complete control over how a bass guitar 
+            will look so I decided to go with a Lord of the Rings themed bass.
+        </p>
+
+        <p>
+            <span>ROLE</span>
+            <strong>Designer and Manufacturer</strong>
+        </p>
+
+        <p>
+            <span>DATE</span>
+            <strong>2025</strong>
+        </p>
+
+        <p>
+            <span>TOOLS</span>
+            <strong>Cricut, Woodworking, Heat Gun</strong>
+        </p>
+
+    </div>
+
+    <div class="project-detail-image">
+        <img
+            src="../images/robotarmassembled2.jpg"
+            alt="Completed 3D printed 5x5 Rubik's Cube"
+        >
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     01 — OVERVIEW
+========================================================= -->
+
+<section class="project-detail-section">
+
+    <div class="project-detail-content">
+
+        <h2>
+            The Vision
+        </h2>
+
+        <p>
+            My main priority with this project was to learn how a bass guitar functions however that was going to happen 
+            naturally through the restorations and modifications. My vision for how this bass come out was a Lord of the 
+            Rings themed bass with a cool poster on the front and the map of middle earth on the back. I also had creative 
+            plans for the back of the neck.
+        </p>
+
+    </div>
+
+    <div class="project-detail-image">
+
+        <h2>
+            Fixing the Bass
+        </h2>
+
+        <p>
+            At the state that I got the bass, it did not work. 
+        </p>
+
+        <!-- Optional image for calculations / FEA / graphs -->
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     03 — DESIGN
+========================================================= -->
+
+<section class="project-detail-section">
+
+    <div class="project-detail-content">
+
+        <h2>
+            Overall Design Choice
+        </h2>
+
+        <p>
+            For a desk project of this size the most efficient way to get physical parts is through 3D printing. 
+            The robot was designed for 3D printing for framing and supports with friction fit holes for bearings, gears and screws.
+            To get the parts screwed together, brass threaded inserts were chosen for a strong reliable mounts for screws. 
+            To compute the speech to text and live video feedback, the computing power of a raspberry pi was needed. To drive the Servos
+            a hat was chosen to attach to the raspberry pi for the ease of connection and shared language.
+        </p>
+
+        <p>
+            The option of routing the computing through a computer would have been cheaper but it was ultimately decided that
+            keeping the computing local was worth the extra price. Using an arduino was also in the decision making due to
+            its popularity and large amount of online advice and help, however the languages would have conflicted with the
+            raspberry pi which would have most likely taken more time to figure out than the online help would save which
+            is why a hat directly compatible with the raspberry pi was chosen.
+        </p>
+
+        <!-- Optional image for calculations / FEA / graphs -->
+
+    </div>
+
+    <div class="project-detail-image">
+
+        <img
+            src="../images/robotarmCADrough.jpg"
+            alt="Engineering analysis"
+        >
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     04 — 3D Modeling and Design
+========================================================= -->
+
+<section class="project-detail-section">
+
+    <div class="project-detail-content">
+
+        <h2>
+            3D Modeling and Design
+        </h2>
+
+        <p>
+            The 3D model was modeled in its entirety using Onshape. Each arm segment had its own assembly, including the printed
+            parts, bearings, gears, and servos. Each of these individual subassemblies were then assembled into one master assembly
+            to show the entire robot arm and its functionality. The master assembly shows mating interactions to simulate
+            the expected movement of the arm.
+        </p>
+
+        <p>
+            Some design decisions that were made through the modeling process were to place the servos closer to the base
+            than the joint they are controlling to reduce the moment of the arm when it is stretched out. The servos are
+            connected to 3D printed gears to attach to GT2 belts that attach to the joints. The grabber has a complicated
+            pulley system that ultimately did not work after testing and different approaches are in progress.
+        </p>
+
+        <!-- Optional image for calculations / FEA / graphs -->
+
+    </div>
+
+    <div class="project-detail-image">
+
+        <img
+            src="../images/robotarmCAD.jpg"
+            alt="Engineering analysis"
+        >
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     05 — Mechanical Fabrication
+========================================================= -->
+
+<section class="project-detail-section">
+
+    <div class="project-detail-content">
+
+        <h2>
+            Printing and Assembling the Arm
+        </h2>
+
+        <p>
+            The parts were all printed and the threaded inserts were placed into the parts as needed. The arm was then
+            assembled with all the bearings, belts, parts, screws, and servos.
+        </p>
+
+        <p>
+            All the parts fit together as expected from the 3D model however there were some parts that were difficult to
+            reach the screws that connect them. This required some of the parts to be sanded down or drilled through in
+            order to reach the necessary screw.
+        </p>
+
+        <!-- Optional image for calculations / FEA / graphs -->
+
+    </div>
+
+    <div class="project-detail-image">
+
+        <img
+            src="../images/robotarmprinted.jpg"
+            alt="Engineering analysis"
+        >
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     06 — servos and Pi
+========================================================= -->
+
+<section class="project-detail-section">
+
+    <div class="project-detail-content">
+
+        <h2>
+            Servos and Raspberry Pi setup
+        </h2>
+
+        <p>
+            The servos need power and a brain. The hat that was chosen cannot have 10 amps of 6V current run through it
+            at once which is the power of all servos at max power at once. To solve this issue the power supply was cut and
+            spliced directly to the servo wires to power the servos directly without going through the board. The signal 
+            wires were then ran to the board so the board could still communicate with the servos. The ribbon cable that connects
+            the raspberry pi to the hat also had the wires going to the wrong locations so the wires needed to be rerouted
+            in order for the raspberry pi to effectively communicate with the hat.
+        </p>
+
+        <p>
+            These modifications all work as intended and the raspberry pi contains scripts to move the servos which are correctly
+            powered outside of the hat.
+        </p>
+
+        <!-- Optional image for calculations / FEA / graphs -->
+
+    </div>
+
+    <div class="project-detail-image">
+
+        <img
+            src="../images/robotarmpowerreroute.jpg"
+            alt="Engineering analysis"
+        >
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     07 — Coding Progress
+========================================================= -->
+
+<section class="project-detail-section">
+
+    <div class="project-detail-content">
+
+        <h2>
+            Coding the Robot
+        </h2>
+
+        <p>
+            The electrical components work as intended and the raspberry pi can effectively communicate with all of the servos.
+            Scripts have been written that can control and test each servo that is mounted on the robot arm, however the
+            structural integrity of the robot has not been established enough to move much further in the coding part of this 
+            project.
+        </p>
+
+        <p>
+            These scripts allow individual testing of each servo and how the arm behaves and interacts with each movement. This is
+            very helpful in the iterative testing portion of this project because it makes problems easy to diagnose which will speed
+            up progress of the project.
+        </p>
+
+        <!-- Optional image for calculations / FEA / graphs -->
+
+    </div>
+
+    <div class="project-detail-image">
+
+        <img
+            src="../images/robotarmwiring.jpg"
+            alt="Engineering analysis"
+        >
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     08 — Final Result and Lessons Learned
+========================================================= -->
+
+<section class="project-detail-section">
+
+    <div class="project-detail-content">
+
+        <h2>
+            Final Result and Lessons Learned
+        </h2>
+
+        <p>
+            The final result is a structurally sound robot arm and a safe servo system that can easily be coded and tested.
+            The belt on the shoulder slips but all other joints work well. Potential decisions moving forward might include
+            mounting the servo directly to remove the possibility to slip or purchase manufactured GT2 belts to prevent slipping.
+        </p>
+
+        <p>
+            Changes are currently being pursued for the shoulder and the grabber. I have learned about how motor controllers,
+            servos, and raspberry pis work through this project and how to apply them to a moving mechanical system. I am 
+            continuing to deepen my understanding of the iterative process of rapid prototyping and what it takes to complete
+            a project to complete a goal.
+        </p>
+
+        <!-- Optional image for calculations / FEA / graphs -->
+
+    </div>
+
+    <div class="project-detail-image">
+
+        <img
+            src="../images/robotarmassembled2.jpg"
+            alt="Engineering analysis"
+        >
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     PROJECT DETAILS
+========================================================= -->
+
+<section class="project-detail-info">
+
+    <div>
+        <span>PROJECT TYPE</span>
+        <strong>Mechanical / Robotics / AI</strong>
+    </div>
+
+    <div>
+        <span>SOFTWARE</span>
+        <strong>Onshape / Python</strong>
+    </div>
+
+    <div>
+        <span>SKILLS</span>
+        <strong>CAD / Wiring / Controls / Coding</strong>
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     NAVIGATION
+========================================================= -->
+
+<section class="project-detail-back">
+
+    <a href="../projects.html">
+        ← Back to Projects
+    </a>
+
+</section>
+
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+    <span>© 2026 Elijah Parsons</span>
+
+    <div>
+        <a href="#">GitHub</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Resume</a>
+    </div>
+
+    <span>ENGINEERING PORTFOLIO</span>
+
+</footer>
+
+
+</body>
+</html>
