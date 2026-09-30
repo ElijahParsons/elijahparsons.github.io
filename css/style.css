@@ -1729,9 +1729,10 @@ img {
 .experience-image img,
 .about-image img,
 .engineering-image {
-    object-fit: contain !important;
-    border: none !important;
-    background: transparent;
+    width: 100%;
+    height: 100%;
+    object-fit: cover !important;
+    display: block;
 }
 
 /* Keep images inside their existing image areas without cropping. */
