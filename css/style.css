@@ -1715,58 +1715,36 @@ footer a:hover {
 }
 
 /* =========================================================
-   FINAL IMAGE OVERRIDES
-   Show the full image and remove image borders.
-========================================================= */
+   FINAL IMAGE SETTINGS
+   ========================================================= */
 
-img {
-    border: none !important;
-}
+img { border: none !important; }
 
-.featured-image img,
-.project-row-image img,
-.project-detail-image img,
-.experience-image img,
-.about-image img,
-.engineering-image {
-    object-fit: contain !important;
-    border: none !important;
-    background: transparent;
-}
+/* HOMEPAGE HERO — fills the box and may crop */
+.hero-image { width: 100%; height: 100%; overflow: hidden; }
+.hero-image img { width: 100%; height: 100%; object-fit: cover !important; display: block; border: none !important; }
 
-/* Keep images inside their existing image areas without cropping. */
-.project-row-image img,
-.project-detail-image img,
-.featured-image img,
-.experience-image img {
-    max-width: 100%;
-    max-height: 100%;
-}
+/* PROJECT CARD IMAGES — show the entire picture */
+.project-row-image { overflow: hidden; background: transparent; }
+.project-row-image img { width: 100%; height: 100%; object-fit: contain !important; display: block; border: none !important; }
+.project-row:hover .project-row-image img { transform: none; }
 
-/* If an image-frame wrapper is present, it should not add a border. */
-.image-frame {
-    border: none !important;
-    max-width: 100%;
-    max-height: 100%;
-}
+/* FEATURED PROJECT IMAGES — show the entire picture */
+.featured-image { overflow: hidden; background: transparent; }
+.featured-image img { width: 100%; height: 100%; object-fit: contain !important; display: block; border: none !important; }
 
-.image-frame img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: contain !important;
-    border: none !important;
-}
+/* INDIVIDUAL PROJECT IMAGES — show the entire picture */
+.project-detail-image { overflow: hidden; background: transparent; }
+.project-detail-image img { width: 100%; height: 100%; object-fit: contain !important; display: block; border: none !important; }
 
-.hero-image {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
+/* EXPERIENCE IMAGES — show the entire picture */
+.experience-image { overflow: hidden; background: transparent; }
+.experience-image img { width: 100%; height: 100%; object-fit: contain !important; display: block; border: none !important; }
 
-.hero-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
+/* ABOUT IMAGE — show the entire picture */
+.about-image { overflow: hidden; }
+.about-image img { width: 100%; height: auto; object-fit: contain !important; display: block; border: none !important; }
+
+/* IMAGE FRAME — show the entire picture */
+.image-frame { border: none !important; overflow: hidden; max-width: 100%; max-height: 100%; }
+.image-frame img { display: block; width: 100%; height: 100%; object-fit: contain !important; border: none !important; }
