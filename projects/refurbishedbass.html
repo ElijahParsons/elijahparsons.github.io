@@ -122,7 +122,10 @@
         </h2>
 
         <p>
-            At the state that I got the bass, it did not work. 
+            At the state that I got the bass, it did not work. I took it apart to diagnose the problem and pickups were not 
+            working which ended up being a wiring problem so I looked up the schematic of what the wire connections are 
+            supposed to be and rewired and soldered the pickup circuit. After rewiring the bass it worked as a normal bass 
+            would.
         </p>
 
         <!-- Optional image for calculations / FEA / graphs -->
@@ -141,23 +144,14 @@
     <div class="project-detail-content">
 
         <h2>
-            Overall Design Choice
+            Decorating the Body
         </h2>
 
         <p>
-            For a desk project of this size the most efficient way to get physical parts is through 3D printing. 
-            The robot was designed for 3D printing for framing and supports with friction fit holes for bearings, gears and screws.
-            To get the parts screwed together, brass threaded inserts were chosen for a strong reliable mounts for screws. 
-            To compute the speech to text and live video feedback, the computing power of a raspberry pi was needed. To drive the Servos
-            a hat was chosen to attach to the raspberry pi for the ease of connection and shared language.
-        </p>
-
-        <p>
-            The option of routing the computing through a computer would have been cheaper but it was ultimately decided that
-            keeping the computing local was worth the extra price. Using an arduino was also in the decision making due to
-            its popularity and large amount of online advice and help, however the languages would have conflicted with the
-            raspberry pi which would have most likely taken more time to figure out than the online help would save which
-            is why a hat directly compatible with the raspberry pi was chosen.
+            The plans for the body was to have a decorative poster on the front and the map of middle earth on the back.
+            To make the edges look good I spray painted a fading design to bridge the two posters then I glued the posters
+            to the body. To finsih the I added a layer of epoxy to give it a shiny finsih. Epoxy needs to be stored and applied in 
+            appropriate temperatures to ensure that it continues to function as intended.
         </p>
 
         <!-- Optional image for calculations / FEA / graphs -->
@@ -185,21 +179,19 @@
     <div class="project-detail-content">
 
         <h2>
-            3D Modeling and Design
+            Decorating the Neck
         </h2>
 
         <p>
-            The 3D model was modeled in its entirety using Onshape. Each arm segment had its own assembly, including the printed
-            parts, bearings, gears, and servos. Each of these individual subassemblies were then assembled into one master assembly
-            to show the entire robot arm and its functionality. The master assembly shows mating interactions to simulate
-            the expected movement of the arm.
+            For the neck I wanted the ring inscription to be burned onto the back. This process required multiple steps including 
+            resizing and formatting a picture of the inscription to fit on the back of the neck then upload to CriCut software 
+            to create a stencil. I then applied a chemical solution that when dried onto the wood, would make it burn easier.
+            When the chemical solution was dried onto only to the stenciled design, I took a heat gun to burn the design 
+            onto the back of the neck.
         </p>
 
         <p>
-            Some design decisions that were made through the modeling process were to place the servos closer to the base
-            than the joint they are controlling to reduce the moment of the arm when it is stretched out. The servos are
-            connected to 3D printed gears to attach to GT2 belts that attach to the joints. The grabber has a complicated
-            pulley system that ultimately did not work after testing and different approaches are in progress.
+            The head of the bass also needed to cut and sanded and after that the whole neck was coated with a sealant.
         </p>
 
         <!-- Optional image for calculations / FEA / graphs -->
@@ -210,128 +202,6 @@
 
         <img
             src="../images/robotarmCAD.jpg"
-            alt="Engineering analysis"
-        >
-
-    </div>
-
-</section>
-
-
-<!-- =========================================================
-     05 — Mechanical Fabrication
-========================================================= -->
-
-<section class="project-detail-section">
-
-    <div class="project-detail-content">
-
-        <h2>
-            Printing and Assembling the Arm
-        </h2>
-
-        <p>
-            The parts were all printed and the threaded inserts were placed into the parts as needed. The arm was then
-            assembled with all the bearings, belts, parts, screws, and servos.
-        </p>
-
-        <p>
-            All the parts fit together as expected from the 3D model however there were some parts that were difficult to
-            reach the screws that connect them. This required some of the parts to be sanded down or drilled through in
-            order to reach the necessary screw.
-        </p>
-
-        <!-- Optional image for calculations / FEA / graphs -->
-
-    </div>
-
-    <div class="project-detail-image">
-
-        <img
-            src="../images/robotarmprinted.jpg"
-            alt="Engineering analysis"
-        >
-
-    </div>
-
-</section>
-
-
-<!-- =========================================================
-     06 — servos and Pi
-========================================================= -->
-
-<section class="project-detail-section">
-
-    <div class="project-detail-content">
-
-        <h2>
-            Servos and Raspberry Pi setup
-        </h2>
-
-        <p>
-            The servos need power and a brain. The hat that was chosen cannot have 10 amps of 6V current run through it
-            at once which is the power of all servos at max power at once. To solve this issue the power supply was cut and
-            spliced directly to the servo wires to power the servos directly without going through the board. The signal 
-            wires were then ran to the board so the board could still communicate with the servos. The ribbon cable that connects
-            the raspberry pi to the hat also had the wires going to the wrong locations so the wires needed to be rerouted
-            in order for the raspberry pi to effectively communicate with the hat.
-        </p>
-
-        <p>
-            These modifications all work as intended and the raspberry pi contains scripts to move the servos which are correctly
-            powered outside of the hat.
-        </p>
-
-        <!-- Optional image for calculations / FEA / graphs -->
-
-    </div>
-
-    <div class="project-detail-image">
-
-        <img
-            src="../images/robotarmpowerreroute.jpg"
-            alt="Engineering analysis"
-        >
-
-    </div>
-
-</section>
-
-
-<!-- =========================================================
-     07 — Coding Progress
-========================================================= -->
-
-<section class="project-detail-section">
-
-    <div class="project-detail-content">
-
-        <h2>
-            Coding the Robot
-        </h2>
-
-        <p>
-            The electrical components work as intended and the raspberry pi can effectively communicate with all of the servos.
-            Scripts have been written that can control and test each servo that is mounted on the robot arm, however the
-            structural integrity of the robot has not been established enough to move much further in the coding part of this 
-            project.
-        </p>
-
-        <p>
-            These scripts allow individual testing of each servo and how the arm behaves and interacts with each movement. This is
-            very helpful in the iterative testing portion of this project because it makes problems easy to diagnose which will speed
-            up progress of the project.
-        </p>
-
-        <!-- Optional image for calculations / FEA / graphs -->
-
-    </div>
-
-    <div class="project-detail-image">
-
-        <img
-            src="../images/robotarmwiring.jpg"
             alt="Engineering analysis"
         >
 
@@ -353,16 +223,10 @@
         </h2>
 
         <p>
-            The final result is a structurally sound robot arm and a safe servo system that can easily be coded and tested.
-            The belt on the shoulder slips but all other joints work well. Potential decisions moving forward might include
-            mounting the servo directly to remove the possibility to slip or purchase manufactured GT2 belts to prevent slipping.
-        </p>
-
-        <p>
-            Changes are currently being pursued for the shoulder and the grabber. I have learned about how motor controllers,
-            servos, and raspberry pis work through this project and how to apply them to a moving mechanical system. I am 
-            continuing to deepen my understanding of the iterative process of rapid prototyping and what it takes to complete
-            a project to complete a goal.
+            This project was a success because I better understand how a bass works afterwards. I got to work on the inside 
+            electronics and pickups as well as requiring mechanical adjustments for the neck and body. On top of just learning 
+            about how the instrument works I also grew familiar with 2D design software and using precision machines to 
+            accomplish my goal.
         </p>
 
         <!-- Optional image for calculations / FEA / graphs -->
@@ -389,17 +253,17 @@
 
     <div>
         <span>PROJECT TYPE</span>
-        <strong>Mechanical / Robotics / AI</strong>
+        <strong>Woodworking / Electronics / Precision Cutting</strong>
     </div>
 
     <div>
         <span>SOFTWARE</span>
-        <strong>Onshape / Python</strong>
+        <strong>CriCut</strong>
     </div>
 
     <div>
         <span>SKILLS</span>
-        <strong>CAD / Wiring / Controls / Coding</strong>
+        <strong>Wiring / Woodworking / CriCut / Attention to Detail</strong>
     </div>
 
 </section>
